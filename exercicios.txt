@@ -1,0 +1,2 @@
+EXERCÍCIO 1:
+Suba uma alteração simples no Cloud Shell, execute o comando `git pull origin main`
