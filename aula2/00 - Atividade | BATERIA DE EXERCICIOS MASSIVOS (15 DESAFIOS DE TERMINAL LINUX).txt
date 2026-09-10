@@ -1,0 +1,27 @@
+GRUPO A: AMBIENTE, PROCESSOS E COMANDOS BASICOS LINUX]
+
+Exercicio 01:
+
+Verifique o diretorio atual de trabalho e liste todos os arquivos, incluindo
+arquivos ocultos e detalhes de permissao (`pwd` e `ls -la`).
+
+Exercicio 02:
+
+Exiba as variaveis de ambiente do sistema e filtre apenas as variaveis que
+contenham a palavra `USER` ou `SHELL` utilizando o operador pipe `|` e `grep`.
+
+Exercicio 03:
+
+Identifique o numero do processo (PID) em que o servidor `node servidor.js` esta
+rodando no seu terminal utilizando o comando `ps aux | grep node`.
+
+Exercicio 04:
+
+Verifique se a porta de rede 3000 esta aberta e escutando conexoes usando
+o comando `netstat -tuln` ou `ss -tuln`.
+
+Exercicio 05:
+
+Crie um arquivo chamado `ambiente_info.txt` contendo a data atual do sistema,
+o nome da maquina (hostname) e o uso de memoria (`date`, `hostname`, `free -h`)
+redirecionando a saida com o operador `>`.
