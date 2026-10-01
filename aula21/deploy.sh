@@ -5,7 +5,7 @@ echo "================================================"
 
 REPO_DIR="$HOME/binario_tech"
 APP_NAME="api-cicd"
-PORT=3002
+PORT=3001
 
 echo "[1/4] Atualizando código-fonte do repositório remoto..."
 cd $REPO_DIR
@@ -21,6 +21,14 @@ pm2 restart $APP_NAME
 echo "[4/4] Executando Smoke Test na API (Porta $PORT)..."
 sleep 2
 HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:$PORT/api/v1/versao)
+
+LOG_FILE="deploy_history.log"
+COMMIT_HASH=$(git rev-parse --short HEAD)
+DATE_NOW=$(date '+%Y-%m-%d %H:%M:%S')
+
+echo "[DATE_NOW] Deploy realizado com sucesso - Cmmit: $COMMIT_HASH" >> "$LOG_FILE"
+
+echo "Histórico gravado em $LOG_FILE com sucesso!"
 
 if [ "$HTTP_STATUS" -eq 200 ]; then
   echo -e "\n[SUCESSO] Deploy realizado e verificado com sucesso! HTTP Status 200."
