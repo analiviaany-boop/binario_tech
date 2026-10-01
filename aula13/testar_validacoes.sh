@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "===================================================="
+echo "=========================================="
 echo " AUDITORIA DE VALIDAÇÃO E ERROS - AULA 13"
-echo "===================================================="
+echo "=========================================="
 
 echo -e "\n[1] Teste 1: Envio de Payload INVÁLIDO (Esperado HTTP 422)..."
 curl -s -X POST http://localhost:3099/api/v1/veiculos \

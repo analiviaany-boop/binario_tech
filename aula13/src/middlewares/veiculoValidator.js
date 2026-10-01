@@ -15,7 +15,8 @@ const regrasCadastroVeiculo = [
     
   body('capacidadeCargaKg')
     .notEmpty().withMessage('A capacidade de carga é obrigatória.')
-    .isFloat({ min: 100 }).withMessage('A capacidade de carga deve ser um número maior ou igual a 100 Kg.')
+    .isFloat({ min: 100 }).withMessage('A capacidade de carga deve ser um número maior ou igual a 100 Kg.'),
+
   body('anoFabricacao')
     .optional({ values: 'falsy' }) // Torna o campo opcional (ignora null, undefined ou string vazia)
     .isInt({ min: 2000, max: anoAtual })
