@@ -1,5 +1,5 @@
 ========================================================================
-                        BINÁRIO TECH - AULA 03
+                        BINÁRIO TECH - AULA 04
                       Histórico de Versionamento
 ========================================================================
 
@@ -7,7 +7,7 @@ NOME: Ana Lívia Paixão
 E-MAIL: pessoal - analiviaany@gmail.com
         educacional - ana.l.paixao@edu.senai.br
 
-DESCRIÇÃO DO PROJETO: Inspecionar e filtrar respostas de APIs JSON via terminal e criar scripts em Bash (.sh) para testar rotas de telemetria automotiva (Scania, Mercedes-Benz, VW).
+DESCRIÇÃO DO PROJETO: Protocolo HTTP e APIs RESTful, dividida em teoria (Headers, Params, Verbos e Status Codes), criação prática de uma API de gerenciamento de frotas em Node.js/Express para a Binario Tech, e uma bateria de 8 exercícios no terminal.
 
 ========================================================================
 
